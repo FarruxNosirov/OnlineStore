@@ -1,0 +1,68 @@
+.BascetCart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 130px;
+}
+.Basketpage_info {
+  display: flex;
+  width: 50%;
+}
+.Basketpage_info div:nth-child(1) {
+  width: 150px;
+  height: 130.5px;
+  background: #edebe9;
+  border-radius: 14.4368px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Basketpage_info div:nth-child(2) {
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.Basketpage_info div:nth-child(2) h3 {
+  margin: 5px 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+.Basketpage_info div:nth-child(2) p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #82828b;
+}
+
+.Basketpage_info div:nth-child(1) img {
+  height: 103.5px;
+  width: 120px;
+  left: 15px;
+  top: 13.5px;
+  border-radius: 0px;
+}
+.add_clos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.add_clos div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.add_clos img {
+  width: 24px;
+  height: 24px;
+  margin: 10px;
+  cursor: pointer;
+}
+.add_clos p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}

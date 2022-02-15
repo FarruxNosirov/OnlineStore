@@ -1,0 +1,120 @@
+.products {
+  position: relative;
+}
+.products-contnet {
+  position: relative;
+  top: 100px;
+  width: 100%;
+}
+.products-contnet .title {
+  display: flex;
+  padding: 0 15px;
+}
+.products-contnet .title .title-btn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+.title-btn div {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.title-btn img {
+  margin: 0 5px;
+}
+
+.products-contnet .btn {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 40px auto;
+}
+.products-contnet .btn button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  background-color: #008475;
+  border-radius: 8px;
+  padding: 16px 32px;
+  cursor: pointer;
+}
+.btn button a {
+  text-decoration: none;
+  color: white;
+}
+
+.list-item {
+  margin-top: 100px;
+}
+
+@media (min-width: 320px) {
+  .products .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .list-item {
+    display: grid;
+    grid-template-columns: 288px;
+    grid-template-rows: auto;
+    grid-gap: 100px 10px;
+    justify-content: center;
+  }
+  .title h1 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 576px) {
+  .products .container {
+    width: 100%;
+  }
+  .list-item {
+    display: grid;
+    grid-template-columns: repeat(2, 288px);
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 100px;
+  }
+  .title h1 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .products .container {
+    width: 90%;
+  }
+  .title h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 900px) {
+  .products .container {
+    width: 95%;
+  }
+  .list-item {
+    display: grid;
+    grid-template-columns: repeat(3, 288px);
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .products .container {
+    width: 1200px;
+  }
+  .list-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  }
+}

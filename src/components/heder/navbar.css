@@ -1,0 +1,285 @@
+.navbar {
+  height: 99px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.navbar a {
+  text-decoration: none;
+  color: #008475;
+}
+.navbar .container {
+  position: relative;
+}
+.navbar .data {
+  position: absolute;
+  height: 52px;
+  top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.data .logo {
+  width: 10%;
+  height: 32px;
+  line-height: 40px;
+}
+.menyu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  width: 90%;
+  height: 52px;
+  top: 22px;
+}
+.Links {
+  width: 48%;
+}
+.Links ul {
+  display: flex;
+  justify-content: space-between;
+  color: #82828b;
+  margin-right: 30px;
+}
+.Search_cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Search_cart .navbar_search {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border: 1px solid #afb1bd;
+  box-sizing: border-box;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.navbar_icon {
+  width: 36px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar_input input {
+  height: 38px;
+  width: 150px;
+  margin-left: 5px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: black;
+}
+.Search_cart .card {
+  background-color: #f46036;
+  display: flex;
+  align-items: center;
+  width: 56px;
+  height: 40px;
+  left: 0;
+  top: 0;
+  justify-content: space-around;
+  border-radius: 8px;
+}
+.navbar_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar_button .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  background: #008475;
+  border-radius: 8px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  color: white;
+  cursor: pointer;
+  border: none;
+  width: 160px;
+  height: 52px;
+}
+.card .icon img {
+  width: 18px;
+}
+.card .text img {
+  top: 0;
+}
+.registir_img {
+  position: relative;
+  margin-right: 30px;
+  display: none;
+}
+@media (min-width: 320px) {
+  .Links {
+    display: none;
+  }
+  .Search_cart {
+    display: none;
+  }
+  .menyu {
+    display: flex;
+    justify-content: end;
+  }
+  .navbar_button .button {
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    font-size: 10px;
+  }
+  .navbar {
+    height: 60px;
+  }
+  .navbar .data {
+    top: 0;
+  }
+  .logo img {
+    width: 35px;
+  }
+  .navbar .container {
+    width: 96%;
+  }
+}
+@media (min-width: 576px) {
+  .Links {
+    display: none;
+  }
+  .Search_cart {
+    display: flex;
+  }
+  .menyu {
+    display: flex;
+    justify-content: end;
+  }
+  .Search_cart .card {
+    width: 36px;
+    height: 30px;
+  }
+  .Search_cart .navbar_search {
+    width: 200px;
+    height: 30px;
+    margin-right: 30px;
+  }
+  .navbar_icon {
+    width: 36px;
+    height: 30px;
+  }
+  .navbar_input input {
+    height: 28px;
+    width: 130px;
+    font-size: 12px;
+  }
+  .navbar .container {
+    width: 95%;
+  }
+  .navbar_icon {
+    width: 30px;
+    height: 30px;
+  }
+  .navbar_icon img {
+    width: 10px;
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  .Links {
+    display: flex;
+  }
+  .Links ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .Links ul li {
+    font-size: 12px;
+  }
+  .Search_cart {
+    display: flex;
+  }
+  .menyu {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+  }
+  .navbar .container {
+    width: 95%;
+  }
+}
+@media (min-width: 900px) {
+  .menyu {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+  }
+  .navbar {
+    height: 99px;
+  }
+  .navbar .data {
+    top: 22px;
+  }
+  .navbar .container {
+    width: 95%;
+  }
+  .Search_cart .card {
+    width: 56px;
+    height: 40px;
+  }
+  .Search_cart .navbar_search {
+    width: 200px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  .navbar_icon {
+    width: 36px;
+    height: 30px;
+  }
+  .navbar_input input {
+    height: 38px;
+    width: 150px;
+    font-size: 14px;
+  }
+  .logo img {
+    width: 45px;
+  }
+  .navbar_button .button {
+    width: 160px;
+    height: 52px;
+    font-size: 14px;
+  }
+  .Links ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .Links ul li {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .Search_cart .navbar_search {
+    width: 250px;
+    height: 40px;
+    margin-left: 20px;
+  }
+  .navbar_input input {
+    height: 38px;
+    width: 200px;
+    font-size: 14px;
+  }
+  .Links ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
