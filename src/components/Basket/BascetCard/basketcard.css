@@ -2,11 +2,19 @@
   width: 100%;
   display: flex;
   align-items: center;
-  height: 130px;
+  min-height: 130px;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(145, 158, 171, 0.24),
+    0px 16px 32px -4px rgba(145, 158, 171, 0.24);
+  margin: 15px 0;
+  border-radius: 10px;
+  padding: 10px 0;
+  position: relative;
 }
 .Basketpage_info {
   display: flex;
   width: 50%;
+  padding-left: 20px;
 }
 .Basketpage_info div:nth-child(1) {
   width: 150px;
@@ -47,7 +55,7 @@
 }
 .add_clos {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 50%;
 }
@@ -65,4 +73,133 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
+}
+#addIcons {
+  background: #008475;
+  width: 20px;
+  height: 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 3px;
+}
+/*BascetCard2*/
+
+.BascetCard2 {
+  position: relative;
+  width: 288px;
+  height: 200px;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(145, 158, 171, 0.24),
+    0px 16px 32px -4px rgba(145, 158, 171, 0.24);
+  border-radius: 16px;
+  margin: 50px 0;
+}
+.basket_card_img {
+  position: absolute;
+}
+.basket_card_img img {
+  position: absolute;
+  width: 238px;
+  height: 204px;
+  left: 25px;
+  top: -70px;
+}
+.Basket_card_icons {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  right: 10px;
+  bottom: 0px;
+  align-items: center;
+}
+.Basket_card_icons p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 6px;
+  font-size: 24px;
+  text-align: center;
+  color: #000000;
+}
+#basketCard_icon {
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+.Basket_card_icon {
+  background: #008475;
+  color: white;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  margin-right: 25px;
+}
+.Basket_card_mony {
+  position: relative;
+  width: 288px;
+  height: 50px;
+  top: 135px;
+  display: flex;
+  justify-content: space-between;
+}
+.Basket_card_taitl {
+  position: absolute;
+  bottom: 0%;
+  left: 24px;
+}
+
+.Basket_card_taitl p {
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.Basket_card_taitl h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 14px;
+}
+.Basket_card_icon {
+  position: absolute;
+  bottom: 0;
+  right: 24px;
+}
+.Basket_card_icon:active {
+  transform: scale(0.9);
+  background-color: blue;
+  color: white;
+}
+
+@media (min-width: 320px) {
+  .BascetCart {
+    display: none;
+  }
+  .BascetCard2 {
+    display: flex;
+  }
+}
+
+@media (min-width: 576px) {
+  .BascetCart {
+    display: flex;
+  }
+  .BascetCard2 {
+    display: none;
+  }
 }

@@ -14,7 +14,7 @@
   position: absolute;
   width: 238px;
   height: 204px;
-  left: 25px;
+  left: 25px; 
   top: -70px;
 }
 .card_icon {
@@ -65,4 +65,9 @@
   position: absolute;
   bottom: 0;
   right: 24px;
+}
+.card_icon:active{
+  transform: scale(0.9);
+  background-color: blue;
+  color: white;
 }

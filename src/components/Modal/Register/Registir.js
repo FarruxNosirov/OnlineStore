@@ -1,6 +1,7 @@
 import React from "react";
 import "./registir.css";
-const Registir = ({ clickMe, clickHandler, login }) => {
+const Registir = ({ clickMe, clickHandler, login ,chengBtn}) => {
+ 
   return (
     <div style={{ display: clickMe ? "flex" : "none" }} className="reg">
       <div onClick={clickHandler} className="Register"></div>
@@ -9,7 +10,7 @@ const Registir = ({ clickMe, clickHandler, login }) => {
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
-          <button id="btn1">Register</button>
+          <div onClick={chengBtn} id="btn1">Register</div>
           <div onClick={login} id="btn2">
             Already have an account?
           </div>

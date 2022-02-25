@@ -1,6 +1,6 @@
 import React from "react";
 import "./Checkout.css";
-
+import Checkout_list from "./CheckoutList/Checkout_list";
 const Checkout = () => {
   return (
     <div className="Checkout">
@@ -9,15 +9,15 @@ const Checkout = () => {
           <div className="form1">
             <h1>Billing details</h1>
             <form>
-              <label for="last_name">First & last name</label>
+              <label htmlFor="last_name">First & last name</label>
               <input type="text" id="last_name" placeholder="i-e. John Smith" />
-              <label for="email">Email address</label>
+              <label htmlFor="email">Email address</label>
               <input
                 type={"email"}
                 id={"email"}
                 placeholder="i-e. johnsmith@gmail.com"
               />
-              <label for="Address">Address</label>
+              <label htmlFor="Address">Address</label>
               <input type="text" id="Address" placeholder="First line" />
               <input type="text" placeholder="Second line" />
             </form>
@@ -48,18 +48,18 @@ const Checkout = () => {
               </div>
             </div>
             <form>
-              <label for="Card number">Card number</label>
+              <label htmlFor="Card number">Card number</label>
               <input type="text" placeholder="i.e. 4123 4567 123 9819" />
             </form>
             <form className="form_flexs">
-              <label for="data">
+              <label htmlFor="data">
                 Expiration Date <input type="text" placeholder="Month" />
               </label>
               <label>
                 <input type="text" placeholder="year" />
               </label>
 
-              <label for="Security code">
+              <label htmlFor="Security code">
                 Security code <input type="text" placeholder="Three digits" />
               </label>
             </form>
@@ -78,7 +78,9 @@ const Checkout = () => {
             <button>Place order</button>
           </div>
         </div>
-        <div className="Checkout_item2"></div>
+        <div className="Checkout_item2">
+          <Checkout_list/> 
+        </div>
       </div>
     </div>
   );

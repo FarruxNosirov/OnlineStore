@@ -32,21 +32,7 @@
   height: 40px;
   margin: 10px 0;
 }
-.Login_container form button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 32px;
-  width: 242px;
-  height: 54px;
-  background: #f46036;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  color: white;
-  outline: none;
-  margin: 5px 0;
-}
+
 .Login_container form div {
   display: flex;
   justify-content: center;

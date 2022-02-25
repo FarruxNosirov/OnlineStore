@@ -1,16 +1,23 @@
 .push_item {
-  width: 1115px;
   margin-top: 80px;
   display: flex;
   flex-direction: column;
   min-height: 130px;
+  width: 100%;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+  color: white;
 }
 .mony_btn {
   height: 98px;
-  width: 1200px;
+  width: 100%;
   border-radius: 8px;
   display: flex;
-  justify-content: end;
+  justify-content: space-around;
   align-items: center;
   margin-top: 30px;
   border-top: 1px solid #e6e6eb;
@@ -32,10 +39,10 @@
   font-size: 16px;
 }
 .Total {
-  width: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
+  width: 100%;
 }
 .Total p {
   font-family: "Galano Grotesque";
@@ -44,6 +51,7 @@
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  margin-right: 20px;
 }
 .Total span {
   font-family: "Galano Grotesque";
@@ -52,6 +60,7 @@
   font-size: 24px;
   line-height: 32px;
   color: #82828b;
+  margin-left: 10px;
 }
 /*Open*/
 
@@ -62,7 +71,7 @@
   width: 100%;
   position: relative;
   top: 100px;
-  display: none;
+  margin-bottom: 100px;
 }
 .Open h1 {
   font-weight: bold;
@@ -90,4 +99,85 @@
   outline: none;
   cursor: pointer;
   color: white;
+}
+@media (min-width:320px){
+  .container{
+    width: 95%;
+  }
+  .Open img{
+    width: 40px;
+  }
+  .Open h1{
+    font-size: 25px;
+  }
+  .Open p{
+    font-size: 15px;
+  }
+  .Open button{
+    font-size: 10px;
+    width: 100px;
+    padding: 0px;
+  }
+}
+@media (min-width:576px){
+  .container{
+    width: 95%;
+  }
+  .Open img{
+    width: 50px;
+  }
+  .Open h1{
+    font-size: 30px;
+  }
+  .Open p{
+    font-size: 18px;
+  }
+  .Open button{
+    font-size: 12px;
+    width: 120px;
+    padding: 0px;
+  }
+}
+@media (min-width:768px){
+  .container{
+    width: 90%;
+  }
+  .Open img{
+    width: 60px;
+  }
+  .Open h1{
+    font-size: 35px;
+  }
+  .Open p{
+    font-size: 24px;
+  }
+  .Open button{
+    font-size: 14px;
+    width: 150px;
+    padding: 0px;
+  }
+}
+@media (min-width:900px){
+  .container{
+    width: 90%;
+  }
+  .Open img{
+    width: 80px;
+  }
+  .Open h1{
+    font-size: 48px;
+  }
+  .Open p{
+    font-size: 22px;
+  }
+  .Open button{
+    padding: 16px 32px;
+    width: 178px;
+    height: 52px;
+  }
+}
+@media (min-width:1200px){
+  .container{
+    width: 1200px;
+  }
 }

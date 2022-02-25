@@ -1,13 +1,14 @@
 .Checkout .container {
   display: flex;
+  justify-content: space-between;
 }
-
 .Checkout_item1 {
   width: 50%;
   display: flex;
   flex-direction: column;
   position: relative;
   margin-top: 96px;
+
 }
 .form1 {
   display: flex;
@@ -44,7 +45,7 @@ form input {
   flex-direction: column;
   align-items: flex-start;
   padding: 10px 12px;
-  width: 589px;
+  width: 100%;
   height: 40px;
   border: 1px solid #afb1bd;
   box-sizing: border-box;
@@ -61,7 +62,7 @@ form input {
 .form2 .Input {
   display: flex;
   justify-content: space-between;
-  width: 589px;
+  width: 100%;
   height: 64px;
   border: 1px solid #afb1bd;
   box-sizing: border-box;
@@ -73,14 +74,13 @@ form input {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 124px;
+  width: 30%;
 }
 .form2 .Input .input_icon p {
-  font-size: 14px;
+  font-size: 10px;
   line-height: 20px;
 }
 .form2 .Input .input_icon input {
-  margin-right: 20px;
   margin-left: 10px;
 }
 .form_flexs {
@@ -88,7 +88,7 @@ form input {
   align-items: flex-end;
 }
 .form_flexs label input {
-  width: 187px;
+  width: 100%;
   height: 40px;
   margin-right: 12px;
 }
@@ -104,7 +104,7 @@ form input {
   margin-bottom: 30px;
 }
 .form2 button {
-  width: 589px;
+  width: 100%;
   height: 54px;
   display: flex;
   justify-content: center;
@@ -121,8 +121,8 @@ form input {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 330px;
   height: 100%;
+  width: 70%;
 }
 .form2 .input_mony img {
   height: 17.797985076904297px;
@@ -152,8 +152,120 @@ form input {
 .Checkout_item2 {
   display: flex;
   flex-direction: column;
-  width: 45%;
   margin: 0 auto;
   margin-top: 50px;
   align-items: center;
+}
+
+@media (min-width:320px){
+  .Checkout .container{
+    width: 95%;
+  }
+  .Checkout .container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .Checkout_item1{
+    width: 95%;
+  }
+  .Checkout_item2{
+    width: 95%;
+  }
+  .form1  h1{
+    font-size: 20px;
+    margin: 0;
+  }
+  .form1 form label {
+    font-size: 12px;
+  }
+  .form1 form input{
+    font-size: 12px;
+  }
+  .form2  h1{
+    font-size: 20px;
+    margin: 0;
+  }
+  .form2 form label {
+    font-size: 12px;
+  }
+  .form2 form input{
+    font-size: 12px;
+  }
+  .input_icon input{
+    margin: 0;
+    padding: 0;
+  }
+  .input_mony div img{
+    width: 25px;
+  }
+}
+@media (min-width:576px){
+  .Checkout .container{
+    width: 95%;
+  }
+  .Checkout_item1{
+    width: 80%;
+  }
+  .Checkout_item2{
+    width: 80%;
+  }
+
+}
+@media (min-width:768px){
+  .Checkout .container{
+    width: 95%;
+  }
+  .Checkout .container{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .Checkout_item1{
+    width: 48%;
+  }
+  .Checkout_item2{
+    width: 48%;
+  }
+}
+@media (min-width:900px){
+  .Checkout .container{
+    width: 95%;
+  }
+  .form1  h1{
+    font-size: 32px;
+    margin: 0;
+  }
+  .form1 form label {
+    font-size: 16px;
+  }
+  .form1 form input{
+    font-size: 14px;
+  }
+  .form2  h1{
+    font-size: 32px;
+    margin: 0;
+  }
+  .form2 form label {
+    font-size: 16px;
+  }
+  .form2 form input{
+    font-size: 12px;
+  }
+  .form2 .Input .input_icon  p{
+    font-size: 16px;
+    
+  }
+  .input_icon input{
+    margin: 0;
+    padding: 0;
+  }
+  .input_mony div img{
+    width: 35px;
+  }
+}
+@media (min-width:1200px){
+  .Checkout .container{
+    width: 1200px;
+  }
 }

@@ -2,7 +2,7 @@ import "./produc.css";
 import { Link } from "react-router-dom";
 import ProductList from "../ProductList";
 
-const HomePageProduts = ({ Data }) => {
+const HomePageProduts = ({ Data}) => {
   return (
     <div className="products">
       <div className="container">
@@ -21,7 +21,7 @@ const HomePageProduts = ({ Data }) => {
             </div>
           </div>
           <div className="list-item">
-            <ProductList Data={Data} />
+            <ProductList Data={Data}  />
           </div>
           <div className="btn">
             <button>

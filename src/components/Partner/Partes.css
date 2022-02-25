@@ -50,7 +50,7 @@
   }
   .partes_img {
     display: grid;
-    grid-template-columns: repeat(1, 250px);
+    grid-template-columns: repeat(2, 250px);
     justify-content: center;
   }
 }

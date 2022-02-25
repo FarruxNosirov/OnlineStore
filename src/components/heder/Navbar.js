@@ -1,6 +1,9 @@
 import "./navbar.css";
 import { Link } from "react-router-dom";
-const navbar = ({ clickHandler }) => {
+import { useSelector } from "react-redux";
+
+const Navbar = ({ clickHandler, registerBtn }) => {
+const sum = useSelector(state => state).count.map(i => Number(i.nam)).reduce((a, b) => a+b, 0)
   return (
     <div className="navbar">
       <div className="container">
@@ -11,11 +14,11 @@ const navbar = ({ clickHandler }) => {
           <div className="menyu">
             <div className="Links">
               <ul>
-                <li>Dairy</li>
-                <li>Eggs</li>
-                <li>Poultry</li>
-                <li>Rice</li>
-                <li>Beef/Mutton</li>
+                <li> <Link to={"/"} >Home</Link>  </li>
+                <li><Link to={"/products_all"}>Eggs</Link></li>
+                <li><Link to={"/products_all"}>Poultry</Link></li>
+                <li><Link to={"/products_all"}>Rice</Link></li>
+                <li><Link to={"/products_all"}>Beef/Mutton</Link></li>
                 <li>
                   <Link to="/products_all">More</Link>
                 </li>
@@ -28,22 +31,22 @@ const navbar = ({ clickHandler }) => {
                     <img src="/NavbarImgs/Vector (1).png" />
                   </Link>
                 </div>
-                <div className="text"></div>
+                <div className="text"> {sum} </div>
               </div>
               <div className="navbar_search">
                 <div className="navbar_icon">
                   <img src="/NavbarImgs/Vector (2).png" />
                 </div>
-                <div className="navbar_input">
-                  <input type={"search"} placeholder="search" />
+                <div>
+                  <input type="text" />
                 </div>
               </div>
             </div>
             <div className="navbar_button">
-              <button onClick={clickHandler} className="button">
+              <button style={{ display: registerBtn ? "none" : "flex" }} onClick={clickHandler} className="button">
                 Register/Login
               </button>
-              <div className="registir_img">
+              <div style={{ display: registerBtn ? "flex" : "none" }} className="registir_img">
                 <img src="/NavbarImgs/Profile Pic.png" />
               </div>
             </div>
@@ -54,4 +57,4 @@ const navbar = ({ clickHandler }) => {
   );
 };
 
-export default navbar;
+export default Navbar;

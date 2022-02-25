@@ -6,11 +6,11 @@ import { Banner } from "./components/Banner/Banner";
 import Products from "./components/Products/HomePageProducts/HomePageProduts";
 import { Partner } from "./components/Partner/Partner";
 
-export const Component = ({ Data }) => {
+export const Component = () => {
   return (
     <>
       <Banner />
-      <Products Data={Data} />
+      <Products />
       <About />
       <Slayder />
       <Partner />

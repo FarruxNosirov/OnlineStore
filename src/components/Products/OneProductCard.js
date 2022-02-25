@@ -1,10 +1,34 @@
-import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./card.css";
-import { AppContext } from "../../App";
+import { useDispatch } from "react-redux";
+import { increment } from "../../action/index";
+import { useSelector } from "react-redux";
+
+
 
 const OneProductCard = ({ item }) => {
-  const { state, dispatch } = useContext(AppContext);
+  let store =useSelector((stete=> stete.count));
+  const dispatch = useDispatch();
+
+  const handlerAdd = (e, index) => {
+    const filter= store.some(i=>i.id===index)
+    if(!filter){
+    let productbasket = {
+        id: item.id,
+        name: item.name,
+        red_money: item.red_money,
+        black_money: item.black_money,
+        img_url: item.img_url,
+        money: item.money,
+        nam:item.nam
+      };
+      dispatch({ type: "AddBasket", product: productbasket });
+    } else {
+      store.filter(i=>i.id===index)[0].nam++
+      store.filter(i=>i.id===index)[0].money+=store.filter(i=>i.id===index)[0].money
+    }
+  };
+
   return (
     <div className="Card">
       <Link to={"/" + item.id} className="card_img">
@@ -18,13 +42,10 @@ const OneProductCard = ({ item }) => {
           </p>
           <h4>{item.name}</h4>
         </div>
-        <div
-          className="card_icon"
-          onClick={() =>
-            dispatch({ type: "ADD_CARD", payload: { money: item.black_money } })
-          }
-        >
-          <img src="/products/puls.png" />
+        <div onClick={(e, index)=>handlerAdd(e, item.id)}>
+          <div className="card_icon" onClick={() => dispatch(increment())}>
+            <img src="/products/puls.png" />
+          </div>
         </div>
       </div>
     </div>

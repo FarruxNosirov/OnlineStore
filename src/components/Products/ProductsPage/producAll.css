@@ -191,6 +191,9 @@
     grid-template-columns: repeat(1, 288px);
     justify-content: center;
   }
+  #filter{
+    display: flex;
+  }
 }
 @media (min-width: 576px) {
   .ProducAll .container {
@@ -220,7 +223,7 @@
 }
 @media (min-width: 900px) {
   .ProducAll .container {
-    width: 90%;
+    width: 96%;
   }
   .producAll_filter {
     display: flex;
@@ -229,6 +232,15 @@
   .ProducAll_element {
     display: flex;
     justify-content: space-between;
+  }
+  #filter{
+    display: none;
+  }
+}
+
+@media (min-width: 1000px){
+  .ProducAll .container {
+    width: 90%;
   }
 }
 @media (min-width: 1200px) {

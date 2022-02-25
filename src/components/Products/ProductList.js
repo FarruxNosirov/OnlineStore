@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import OneProductCard from "./OneProductCard";
+import { useSelector } from "react-redux";
 
-const ProductList = ({ Data }) => {
-  return Data.map((item) => {
-    return <OneProductCard item={item} key={item.id} />;
+const ProductList = () => {
+
+  const arr=useSelector((state)=>state.item)
+
+  return arr.map((item) => {
+    return <OneProductCard item={item} key={item.id}  />;
   });
 };
 

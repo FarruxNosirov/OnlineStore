@@ -1,13 +1,16 @@
 import React from "react";
 import "./producAll.css";
 import ProductList from "../ProductList";
-const ProductsPage = ({ Data }) => {
+import ClickFilter from "./filterClick/ClickFilter";
+
+const ProductsPage = ({  menbar2, add2 }) => {
   return (
     <div className="ProducAll">
+      <ClickFilter add2={add2} />
       <div className="container">
         <div className="ProducAll_tatl">
           <div>
-            <img src="/producAImg/Vector.png" />
+            <img id="filter" onClick={menbar2} src="/producAImg/Vector.png" />
             <h1>Filters</h1>
           </div>
           <div>
@@ -59,9 +62,10 @@ const ProductsPage = ({ Data }) => {
             </div>
           </div>
           <div className="producAll_fud">
-            <ProductList Data={Data} />
+            <ProductList  />
           </div>
         </div>
+
         {/* <div className="Navigator">
           <div className="First_Lost">
             <button className="first">First</button>
